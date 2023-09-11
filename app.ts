@@ -1,18 +1,7 @@
-enum Role {
-  Admin,
-  Read_only,
-  Author,
+function add(n1: number, n2: number) {
+  return n1 + n2;
 }
 
-const person = {
-  name: "Nicolas",
-  age: 38,
-  hobbies: ["karate", "judo"],
-  role: Role.Author,
-};
+let combineValues: (a: number, b: number) => number;
 
-if (person.role === Role.Author) {
-  console.log("Person is an author");
-} else {
-  console.log("Person is not an author");
-}
+console.log(add(1, 2));
